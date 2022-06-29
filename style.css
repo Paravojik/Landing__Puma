@@ -12,6 +12,19 @@
   flex-direction: column;
   align-items: center;
 }
+.wrap .row2 {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+}
+.wrap .row {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
 .wrap .header {
   width: 100%;
   height: 15vh;
@@ -33,8 +46,8 @@
   width: 67px;
   height: 30px;
   position: absolute;
-  left: 9.2%;
-  top: 3vh;
+  margin-top: -2.5vh;
+  margin-left: -2%;
 }
 .wrap .header .logo__header .text__puma__header {
   font-family: "Source Serif Pro", serif;
@@ -87,7 +100,7 @@
 }
 .wrap .page1 .top__page1 .right__top__page1 {
   width: 50%;
-  height: 100%;
+  height: 75vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -111,7 +124,7 @@
 }
 .wrap .page1 .top__page1 .left__top__page1 {
   width: 50%;
-  height: 100%;
+  height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -235,24 +248,24 @@
 }
 .wrap .page2 .right__page2 {
   width: 50%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .wrap .page2 .right__page2 .right__page2__img_video {
   position: absolute;
-  width: 500px;
-  height: 300px;
+  width: 38%;
+  height: 45%;
   z-index: 10;
 }
 .wrap .page2 .right__page2 .right__page2__img_bg__video {
   position: absolute;
-  width: 500px;
-  height: 300px;
+  width: 38%;
+  height: 45%;
   z-index: 5;
-  margin-top: -50px;
-  margin-left: 50px;
+  margin-top: -30px;
+  margin-left: 30px;
 }
 .wrap .page2 .right__page2 .btn__play__right__page2 {
   width: 100px;
@@ -386,7 +399,7 @@
   align-items: center;
 }
 .wrap .page4 .bot__page4 .bot__page4__col {
-  width: 23%;
+  width: 46%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -741,7 +754,7 @@
   padding-bottom: 25px;
 }
 .wrap .page7 .top__page7 .top__page7__col_2 {
-  width: 15%;
+  width: 50%;
   height: 70%;
   display: flex;
   flex-direction: column;
@@ -769,7 +782,7 @@
   color: rgb(26, 10, 3);
 }
 .wrap .page7 .top__page7 .top__page7__col_4 {
-  width: 25%;
+  width: 50%;
   height: 100%;
 }
 .wrap .page7 .top__page7 .top__page7__col_4 .page6__input {
@@ -812,7 +825,7 @@
   font-family: "Poppins", sans-serif;
 }
 .wrap .page7 .top__page7 .top__page7__col {
-  width: 22%;
+  width: 30%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -831,7 +844,7 @@
   color: rgba(26, 10, 3, 0.7);
 }
 .wrap .page7 .top__page7 .top__page7__col .top__page7__col__icons {
-  width: 60%;
+  width: 100%;
   height: 20px;
   display: flex;
   justify-content: space-between;
@@ -852,13 +865,224 @@
   width: 67px;
   height: 30px;
   position: absolute;
-  left: 9.2%;
-  top: 551vh;
+  margin-top: -2.5vh;
+  margin-left: -2%;
 }
 .wrap .page7 .top__page7 .top__page7__col .logo__header .text__puma__header {
   font-family: "Source Serif Pro", serif;
   font-weight: 600;
   font-size: 22px;
+}
+
+@media screen and (max-width: 1350px) {
+  .wrap .page1 .top__page1 .left__top__page1 .left__top__page1__text {
+    font-size: 51px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .wrap {
+    height: 635vh;
+  }
+  .wrap .header .btns__header {
+    width: 35%;
+  }
+  .wrap .page1 .choose__trainers__page1 {
+    width: 80%;
+  }
+  .wrap .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .wrap .page4 {
+    height: 135vh;
+  }
+}
+@media screen and (max-width: 800px) {
+  .wrap .header .btns__header {
+    width: 50%;
+    margin-right: 15%;
+  }
+  .wrap .header .btn__buy__header {
+    width: 20%;
+  }
+  .wrap .page1 .top__page1 {
+    height: 140vh;
+    flex-direction: column;
+  }
+  .wrap .page1 {
+    height: 160vh;
+  }
+  .wrap .page1 .top__page1 .left__top__page1 {
+    width: 80%;
+    padding: 0;
+  }
+  .wrap .page1 .top__page1 .right__top__page1 {
+    width: 80%;
+  }
+  .wrap {
+    height: 790vh;
+  }
+  .wrap .page1 .top__page1 .left__top__page1 .left__top__page1__text {
+    font-size: 61px;
+  }
+  .wrap .page1 .choose__trainers__page1 {
+    width: 100%;
+  }
+  .wrap .page2 {
+    height: 140vh;
+    flex-direction: column;
+  }
+  .wrap .page2 .left__page2 {
+    width: 80%;
+    height: 60vh;
+  }
+  .wrap .page2 .right__page2 {
+    width: 100%;
+    height: 100vh;
+  }
+  .wrap .header .logo__header .img__puma {
+    margin-left: -3.5%;
+  }
+  .wrap .page7 .top__page7 .top__page7__col .logo__header .img__puma {
+    margin-left: -3.5%;
+  }
+  .wrap .page3 .bot__page3 .card__page3 {
+    padding: 10px 10px;
+  }
+  .wrap .page4 .top__page4 .categories__top__page4 .categories__top__page4__left {
+    width: 70%;
+  }
+  .wrap .page4 .top__page4 .categories__top__page4 .categories__top__page4__right {
+    width: 25%;
+  }
+  .wrap .page4 .bot__page4 .bot__page4__col {
+    width: 100%;
+  }
+  .wrap .page4 .bot__page4 .bot__page4__col {
+    align-items: center;
+  }
+  .wrap .page5 .bot__page5 .left__page5__img {
+    width: 0%;
+  }
+  .wrap .page5 .bot__page5 .right__page5 {
+    width: 100%;
+    background-color: rgba(129, 168, 218, 0.1);
+    border-radius: 15px;
+    padding: 20px 60px;
+  }
+  .wrap .page6 .page6__left__img {
+    width: 0%;
+  }
+  .wrap .page6 .right__page6 {
+    width: 100%;
+    padding: 20px 60px;
+    margin-left: 0px;
+    border-radius: 15px;
+  }
+  .wrap .page6 {
+    margin-left: 0px;
+  }
+  .wrap .row2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrap .page7 {
+    height: 105vh;
+  }
+  .wrap .page7 .top__page7 .top__page7__col_2 {
+    width: 100%;
+    height: 50%;
+  }
+  .wrap .page7 .top__page7 .top__page7__col {
+    width: 100%;
+    height: 50%;
+    padding-right: 10px;
+  }
+  .wrap .page7 .top__page7 .top__page7__col_4 {
+    width: 100%;
+    height: 50%;
+  }
+  .wrap .page2 .right__page2 {
+    width: 100%;
+    padding: 0px;
+  }
+  .wrap .page2 .right__page2 .right__page2__img_video {
+    width: 50%;
+  }
+  .wrap .page2 .right__page2 .right__page2__img_bg__video {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrap .header {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .wrap .page1 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .wrap .page2 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .wrap .page3 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .wrap .page4 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .wrap .page5 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .wrap .page6 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .wrap .page7 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .wrap .header .btns__header {
+    width: 60%;
+    margin-right: 2%;
+  }
+  .wrap .page1 .choose__trainers__page1 {
+    padding: 20px 5px;
+  }
+  .wrap .page2 .right__page2 .right__page2__img_video {
+    width: 80%;
+  }
+  .wrap .page2 .right__page2 .right__page2__img_bg__video {
+    width: 80%;
+  }
+  .wrap .page3 .top__page3 .top__page3__text2 {
+    font-size: 34px;
+  }
+  .wrap .page3 .bot__page3 .card__page3 .icon__card__page3 {
+    width: 100px;
+    height: 100px;
+  }
+  .wrap .page3 .bot__page3 .card__page3 .icon__card__page3 .img__icon__card__page3 {
+    height: 50px;
+    width: 50px;
+  }
+  .wrap .page3 .bot__page3 .card__page3 {
+    height: 70%;
+  }
+  .wrap .page4 .top__page4 .top__page4__text2 {
+    font-size: 40px;
+  }
+  .wrap .header .logo__header .img__puma {
+    margin-left: -4.5%;
+  }
+  .wrap .page7 .top__page7 .top__page7__col .logo__header .img__puma {
+    margin-left: -4.5%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
